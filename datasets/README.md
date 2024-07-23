@@ -13,3 +13,14 @@ filled using training medians; `SEX` is one-hot encoded in the training pipeline
 
 Additional tabular CSVs use `label` as their target. Text files use `message` and `label`.
 The first cells of each notebook show the actual columns and class counts.
+
+## Other examples
+
+Iris, Wine, breast cancer and Digits use scikit-learn's bundled datasets. Their
+`DESCR` fields contain the upstream references. Churn, equipment, transactions
+and network are generated practice data; spam and sentiment are authored text
+examples. They are not observed customer records or collected messages.
+See [additional data](examples.md) for row counts and labels.
+
+The six example CSVs retain their CC0-1.0 dedication. This does not relicense the
+patient CSV or scikit-learn's third-party datasets.
