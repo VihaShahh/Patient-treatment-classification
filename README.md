@@ -18,3 +18,15 @@ Examples live in `notebooks/`.
 - [Network](notebooks/network.ipynb)
 - [Spam](notebooks/spam.ipynb)
 - [Sentiment](notebooks/sentiment.ipynb)
+
+## Run
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+jupyter notebook
+```
+
+Open a notebook under `notebooks/` and choose **Run All Cells**. Start with
+`patient_basics.ipynb`.
