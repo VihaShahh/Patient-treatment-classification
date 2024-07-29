@@ -1,23 +1,18 @@
 # Classification notebooks
 
-Small pandas and scikit-learn exercises, starting with patient classification.
+Practice projects using pandas, matplotlib and scikit-learn: inspect data, split
+training and test rows, fit a classifier and look at its mistakes.
 
-Install the notebook dependencies with `python -m pip install -r requirements.txt`.
-Examples live in `notebooks/`.
-
-## Examples
-
-- [Patient Basics](notebooks/patient_basics.ipynb)
-- [Iris](notebooks/iris.ipynb)
-- [Wine](notebooks/wine.ipynb)
-- [Breast Cancer](notebooks/breast_cancer.ipynb)
-- [Digits](notebooks/digits.ipynb)
-- [Churn](notebooks/churn.ipynb)
-- [Equipment](notebooks/equipment.ipynb)
-- [Transactions](notebooks/transactions.ipynb)
-- [Network](notebooks/network.ipynb)
-- [Spam](notebooks/spam.ipynb)
-- [Sentiment](notebooks/sentiment.ipynb)
+| Notebook | Topic |
+| --- | --- |
+| [Patient basics](notebooks/patient_basics.ipynb) | Logistic regression, random forest and a majority baseline |
+| [Iris](notebooks/iris.ipynb) | Flower species and a small decision tree |
+| [Wine](notebooks/wine.ipynb) | Scaling numeric features |
+| [Breast cancer](notebooks/breast_cancer.ipynb) | Precision, recall and class errors |
+| [Digits](notebooks/digits.ipynb) | Handwritten digit images |
+| [Churn](notebooks/churn.ipynb), [equipment](notebooks/equipment.ipynb) | Numeric and categorical columns |
+| [Transactions](notebooks/transactions.ipynb), [network](notebooks/network.ipynb) | Label balance and confusion matrices |
+| [Spam](notebooks/spam.ipynb), [sentiment](notebooks/sentiment.ipynb) | Text classification with TF-IDF |
 
 ## Run
 
@@ -28,5 +23,7 @@ python -m pip install -r requirements.txt
 jupyter notebook
 ```
 
-Open a notebook under `notebooks/` and choose **Run All Cells**. Start with
-`patient_basics.ipynb`.
+Start with `notebooks/patient_basics.ipynb` or `notebooks/iris.ipynb` and run the
+cells in order. The patient CSV is at the root; other CSVs are in `datasets/`.
+See [dataset notes](datasets/README.md) for sources and [evaluation notes](docs/evaluation.md)
+for a short explanation of the scores. These are learning exercises.
